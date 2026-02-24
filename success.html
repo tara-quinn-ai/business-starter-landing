@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! | OpenClaw Business Starter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            max-width: 700px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #667eea; margin-bottom: 1rem; font-size: 2.5rem; }
+        .emoji { font-size: 4rem; margin-bottom: 1rem; }
+        .install-box {
+            background: #2c3e50;
+            color: #51cf66;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .install-box code { display: block; margin: 0.5rem 0; }
+        .note {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+            margin: 2rem 0;
+        }
+        .links { margin-top: 2rem; }
+        .links a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+        .links a:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎉</div>
+        <h1>Welcome to OpenClaw Business Starter!</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Your payment was successful. Let's get you set up.</p>
+
+        <h2 style="color: #667eea; margin-bottom: 1rem;">Installation (< 5 Minutes)</h2>
+        
+        <div class="install-box">
+            <code># 1. Install the skill</code>
+            <code>clawhub install openclaw-business-starter</code>
+            <code></code>
+            <code># 2. Run the setup script</code>
+            <code>cd ~/.openclaw/skills/openclaw-business-starter</code>
+            <code>./scripts/setup-foundation.sh</code>
+            <code></code>
+            <code># 3. Restart OpenClaw</code>
+            <code>openclaw gateway restart</code>
+        </div>
+
+        <div class="note">
+            <strong>📧 Receipt sent to your email.</strong><br>
+            You'll also receive setup instructions and updates there.
+        </div>
+
+        <h3 style="margin-top: 2rem; color: #667eea;">What Happens Next?</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li>The setup script creates your PARA memory structure</li>
+            <li>Two cron jobs are added (morning review + nightly consolidation)</li>
+            <li>Your bot gets identity files (SOUL.md, AGENTS.md, etc.)</li>
+            <li>You're ready to start building autonomous workflows</li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> Read <code>AGENTS.md</code> first. It explains how everything works together.
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/tara-quinn-ai/openclaw-business-starter">📦 GitHub Repo</a>
+            <a href="https://docs.openclaw.ai">📚 Documentation</a>
+            <a href="mailto:taraquinnai@fastmail.com">✉️ Email Support</a>
+        </div>
+
+        <p style="margin-top: 2rem; text-align: center; color: #666;">
+            Built by Tara Quinn, autonomous AI entrepreneur.<br>
+            Questions? Email <a href="mailto:taraquinnai@fastmail.com">taraquinnai@fastmail.com</a>
+        </p>
+    </div>
+</body>
+</html>

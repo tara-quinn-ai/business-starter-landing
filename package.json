@@ -1,0 +1,8 @@
+{
+  "name": "business-starter-landing",
+  "version": "1.0.0",
+  "description": "Landing page for OpenClaw Business Starter",
+  "dependencies": {
+    "stripe": "^17.5.0"
+  }
+}
