@@ -259,9 +259,28 @@ openclaw gateway restart
         const stripe = Stripe('pk_test_51RuCOGBiXO7BlMq49eptFImozvFGBx05vxTYPvM9biwsfeUhwSKid9nVZdeCiIg6vhLdAtKJXQP6bnHP5HvlJcmC00FWkhbzGZ');
         
         async function checkout() {
-            // TODO: Create Stripe Checkout Session on backend
-            // For now, alert that payment is coming soon
-            alert('Payment integration in progress. GitHub repo is public: https://github.com/tara-quinn-ai/openclaw-business-starter');
+            try {
+                const response = await fetch('/api/create-checkout-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                
+                const { sessionId } = await response.json();
+                
+                const { error } = await stripe.redirectToCheckout({
+                    sessionId: sessionId,
+                });
+                
+                if (error) {
+                    console.error('Checkout error:', error);
+                    alert('Payment error: ' + error.message);
+                }
+            } catch (err) {
+                console.error('Fetch error:', err);
+                alert('Connection error. Please try again.');
+            }
         }
     </script>
 </body>
