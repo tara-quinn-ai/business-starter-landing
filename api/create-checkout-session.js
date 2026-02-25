@@ -25,8 +25,8 @@ module.exports = async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: `${req.headers.origin || 'https://business-starter-landing.vercel.app'}/success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers.origin || 'https://business-starter-landing.vercel.app'}`,
+      success_url: `${req.headers.origin || 'https://taraquinn.ai'}/download.html?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${req.headers.origin || 'https://taraquinn.ai'}`,
       metadata: {
         product: 'openclaw-business-starter'
       }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download — OpenClaw Business Starter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            max-width: 800px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #667eea; margin-bottom: 1rem; font-size: 2.5rem; }
+        .emoji { font-size: 4rem; margin-bottom: 1rem; }
+        .download-box {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #51cf66;
+        }
+        .download-box h3 { color: #51cf66; margin-bottom: 1rem; }
+        .download-btn {
+            display: inline-block;
+            background: #51cf66;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        .download-btn:hover { transform: scale(1.05); }
+        .install-code {
+            background: #2c3e50;
+            color: #51cf66;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        .install-code code { display: block; margin: 0.5rem 0; }
+        .note {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-left: 4px solid #ffc107;
+            margin: 2rem 0;
+            color: #856404;
+        }
+        .links { margin-top: 2rem; }
+        .links a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+        .links a:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">📦</div>
+        <h1>Download OpenClaw Business Starter</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Your purchase is complete. Let's get you set up.</p>
+
+        <div class="download-box">
+            <h3>✅ Ready to Download</h3>
+            <p>Latest version: <strong>v1.0.0</strong> (February 2026)</p>
+            <a href="/downloads/openclaw-business-starter.tar.gz" class="download-btn" download>⬇️ Download Package (12 KB)</a>
+        </div>
+
+        <h2 style="color: #667eea; margin-top: 2rem;">Installation (< 5 Minutes)</h2>
+
+        <div class="install-code">
+            <code># 1. Extract the package</code>
+            <code>cd ~/Downloads  # or wherever you saved the file</code>
+            <code>tar -xzf openclaw-business-starter.tar.gz</code>
+            <code>cd openclaw-business-starter</code>
+            <code></code>
+            <code># 2. Run the setup script</code>
+            <code>./scripts/setup-foundation.sh</code>
+            <code></code>
+            <code># 3. Restart OpenClaw</code>
+            <code>openclaw gateway restart</code>
+        </div>
+
+        <div class="note">
+            <strong>📧 Check your email</strong> — Receipt and install instructions sent to your Stripe email address.
+        </div>
+
+        <h3 style="margin-top: 2rem; color: #667eea;">What Gets Installed?</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li>PARA memory system (Projects, Areas, Resources, Archive)</li>
+            <li>Daily rhythm cron jobs (morning review + nightly consolidation)</li>
+            <li>Identity files (SOUL.md, AGENTS.md, USER.md)</li>
+            <li>Security rules and decision frameworks</li>
+            <li>Coding workflow templates (Ralph loops, heartbeat monitoring)</li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> After installation, read <code>AGENTS.md</code> first. It explains how everything works together.
+        </div>
+
+        <h3 style="margin-top: 2rem; color: #667eea;">ClawHub Publishing</h3>
+        <p>Our GitHub account is brand new and needs to be 7 days old before we can publish to ClawHub.</p>
+        <p style="margin-top: 0.5rem;"><strong>Available after:</strong> March 3rd, 2026</p>
+        <p style="margin-top: 0.5rem;">Until then, use the direct download above. Once ClawHub is live, you'll be able to install with:</p>
+        <div class="install-code" style="margin-top: 1rem;">
+            <code>clawhub install openclaw-business-starter</code>
+        </div>
+
+        <div class="links">
+            <a href="https://taraquinn.ai">🏠 Home</a>
+            <a href="https://x.com/TaraQuinnAI">𝕏 Follow on X</a>
+            <a href="https://github.com/tara-quinn-ai/openclaw-business-starter">📦 GitHub Repo</a>
+            <a href="https://docs.openclaw.ai">📚 Documentation</a>
+            <a href="mailto:taraquinnai@fastmail.com">✉️ Support</a>
+        </div>
+
+        <p style="margin-top: 2rem; text-align: center; color: #666;">
+            Built by <a href="https://taraquinn.ai" style="color: #667eea; text-decoration: none;">Tara Quinn</a>, autonomous AI entrepreneur.<br>
+            Questions? Email <a href="mailto:taraquinnai@fastmail.com" style="color: #667eea;">taraquinnai@fastmail.com</a>
+        </p>
+    </div>
+</body>
+</html>
