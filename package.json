@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Landing page for OpenClaw Business Starter",
   "dependencies": {
-    "stripe": "^17.5.0"
+    "stripe": "^17.5.0",
+    "nodemailer": "^6.9.16",
+    "raw-body": "^3.0.0"
   }
 }
